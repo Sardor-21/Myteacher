@@ -11,9 +11,8 @@ module.exports = {
   //  externals: {
   //   "jquery": "jQuery"
   // },
-  entry: {
-    app: "./src/index.js",
-  },
+  entry: ["babel-polyfill", "./src/index.js"],
+
   devtool: "inline-source-map",
   devServer: {
     contentBase: path.join(__dirname, "./"), // where dev server will look for static files, not compiled
